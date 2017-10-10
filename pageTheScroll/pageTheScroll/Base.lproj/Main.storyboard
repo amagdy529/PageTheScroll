@@ -39,7 +39,7 @@
 CQ
 </string>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrw-sf-9A8">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrw-sf-9A8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
                         </subviews>
@@ -50,11 +50,15 @@ CQ
                             <constraint firstItem="qrw-sf-9A8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DtG-JD-eGx"/>
                             <constraint firstAttribute="trailing" secondItem="xk9-e2-w5I" secondAttribute="trailing" id="EDh-d2-ve3"/>
                             <constraint firstAttribute="trailing" secondItem="qrw-sf-9A8" secondAttribute="trailing" id="NCI-wl-EfI"/>
+                            <constraint firstAttribute="trailing" secondItem="qrw-sf-9A8" secondAttribute="trailing" id="Pnh-VH-Cpw"/>
+                            <constraint firstItem="qrw-sf-9A8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SGY-K4-RfE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xk9-e2-w5I" secondAttribute="bottom" id="c32-gy-T6n"/>
                             <constraint firstItem="xk9-e2-w5I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="huU-Nv-XhA"/>
+                            <constraint firstItem="qrw-sf-9A8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="n4i-0N-pS8"/>
                             <constraint firstItem="GYv-Td-PqQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oSj-Yv-4DZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qrw-sf-9A8" secondAttribute="bottom" id="oV8-dx-LaX"/>
                             <constraint firstItem="qrw-sf-9A8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pzd-wO-gGs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qrw-sf-9A8" secondAttribute="bottom" id="vOJ-Io-drs"/>
                         </constraints>
                     </view>
                 </viewController>
