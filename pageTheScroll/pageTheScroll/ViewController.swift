@@ -19,9 +19,10 @@ class ViewController: UIViewController {
             let image = UIImage(named: "icon:\(x).png")
             images.append(UIImageView(image: image))
         }
-        // Do any additional setup after loading the view, typically from a nib.
+        print("Count:\(images.count)")
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
