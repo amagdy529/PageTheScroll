@@ -18,8 +18,8 @@ class ViewController: UIViewController {
         for x in 0...2 {
             let image = UIImage(named: "icon:\(x).png")
             images.append(UIImageView(image: image))
-        }
-        print("Count:\(images.count)")
+   		     }
+        print("Count: \(images.count)")
         
     }
     
