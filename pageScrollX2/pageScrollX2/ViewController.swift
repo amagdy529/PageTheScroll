@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         print("Scrollview width: \(scrollViewX.frame.size.width)")
 
         let scrollWidth = scrollViewX.frame.size.width
+        var contentWidth: CGFloat = 0.0
 
         for x in 0...2 {
             let imageX = UIImage(named: "icon\(x).png")
@@ -26,8 +27,11 @@ class ViewController: UIViewController {
             
             newX = scrollWidth / 2 + scrollWidth * CGFloat(x)
             
+            contentWidth += newX
             
             scrollViewX.addSubview(imageViewX)
+            imageViewX.frame = CGRect(x: newX - 75, y: (scrollViewX.frame.size.height / 2) - 75, width: 150, height: 150)
+
         }
         
     }
