@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         print("Scrollview width: \(scrollViewX.frame.size.width)")
 
         let scrollWidth = scrollViewX.frame.size.width
+
         var contentWidth: CGFloat = 0.0
 
         for x in 0...2 {
@@ -33,6 +34,10 @@ class ViewController: UIViewController {
             imageViewX.frame = CGRect(x: newX - 75, y: (scrollViewX.frame.size.height / 2) - 75, width: 150, height: 150)
 
         }
+        
+        scrollViewX.clipsToBounds = false
+        
+        scrollViewX.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
         
     }
 
