@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,24 +38,24 @@
                                     <constraint firstAttribute="height" constant="217" id="Kyv-sg-UlM"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ljx-iv-ykg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljx-iv-ykg">
+                                <rect key="frame" x="58" y="0.0" width="260" height="667"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ARk-dl-55g" secondAttribute="trailing" id="1jz-rK-TjV"/>
+                            <constraint firstItem="ljx-iv-ykg" firstAttribute="top" secondItem="ARk-dl-55g" secondAttribute="top" id="FHY-pU-qOb"/>
                             <constraint firstItem="67K-LQ-o7E" firstAttribute="leading" secondItem="ARk-dl-55g" secondAttribute="leading" id="P1s-mV-h3M"/>
-                            <constraint firstItem="ljx-iv-ykg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rry-2F-Ppm"/>
+                            <constraint firstItem="ljx-iv-ykg" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Scl-A1-XL6"/>
                             <constraint firstItem="Yay-dd-eXc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="ZMU-50-utR"/>
                             <constraint firstItem="ARk-dl-55g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dgU-Nq-xpk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="67K-LQ-o7E" secondAttribute="bottom" id="il2-Zf-KQk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ARk-dl-55g" secondAttribute="bottom" id="l0K-d2-M7i"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ljx-iv-ykg" secondAttribute="bottom" id="okx-5k-amc"/>
-                            <constraint firstAttribute="trailing" secondItem="ljx-iv-ykg" secondAttribute="trailing" id="tRW-hH-KBc"/>
+                            <constraint firstItem="ljx-iv-ykg" firstAttribute="centerX" secondItem="ARk-dl-55g" secondAttribute="centerX" id="nll-Cn-HSA"/>
+                            <constraint firstItem="ljx-iv-ykg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="sLH-el-wOH"/>
                             <constraint firstItem="ARk-dl-55g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wzC-TO-ne7"/>
                             <constraint firstAttribute="trailing" secondItem="Yay-dd-eXc" secondAttribute="trailing" id="xgR-H4-J8f"/>
-                            <constraint firstItem="ljx-iv-ykg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yXj-sS-cYv"/>
                         </constraints>
                     </view>
                     <connections>
