@@ -17,12 +17,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
         print("Scrollview width: \(scrollViewX.frame.size.width)")
-
+        
         let scrollWidth = scrollViewX.frame.size.width
-
+        
         var contentWidth: CGFloat = 0.0
-
+        
         for x in 0...2 {
             let imageX = UIImage(named: "icon\(x).png")
             let imageViewX = UIImageView(image: imageX)
@@ -31,22 +36,20 @@ class ViewController: UIViewController {
             
             newX = scrollWidth / 2 + scrollWidth * CGFloat(x)
             
-            contentWidth += newX 
+            contentWidth += newX
             
             scrollViewX.addSubview(imageViewX)
             imageViewX.frame = CGRect(x: newX - 75, y: (scrollViewX.frame.size.height / 2) - 75, width: 150, height: 150)
-
+            
         }
+        
+        scrollViewX.backgroundColor = UIColor.purple
+
+//        scrollViewX.gestureRecognizerShouldBegin(<#T##gestureRecognizer: UIGestureRecognizer##UIGestureRecognizer#>)
         
         scrollViewX.clipsToBounds = false
         
         scrollViewX.contentSize = CGSize(width: contentWidth , height: view.frame.size.height)
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
