@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             
         }
         
-        scrollViewX.backgroundColor = UIColor.purple
+//        scrollViewX.backgroundColor = UIColor.purple
 
 //        scrollViewX.gestureRecognizerShouldBegin(<#T##gestureRecognizer: UIGestureRecognizer##UIGestureRecognizer#>)
         
